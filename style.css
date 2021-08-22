@@ -1,0 +1,114 @@
+  
+: root {
+    --red :  # e50914 ;
+    --black :  # 141414 ;
+}
+
+* {
+    margem :  0 ;
+    preenchimento :  0 ;
+    dimensionamento da caixa : caixa de borda;
+    decoração de texto : nenhum;
+}
+
+corpo {
+    fundo :  var ( --preto );
+    família de fontes :  'Arial' , Times , serif;
+    tamanho da fonte :  16 px ;
+    cor :  # ffffff ;
+}
+
+cabeçalho . container {
+    display : flex;
+    justify-content : espaço entre;
+    alinhar-itens : centro;
+    margem :  0  16 px ;
+}
+
+cabeçalho . netflix-logo {
+    preenchimento :  12 px  0 ;
+    altura :  4,5 rem ;
+}
+
+header  nav  a {
+    cor :  # a8a8a8 ;
+    preenchimento :  12 px ;
+}
+
+header  nav  a : hover {
+    cor :  # ffffff ;
+}
+
+principal . banner de filme {
+    display : flex;
+    direção flexível : coluna;
+    justificar o conteúdo : centro;
+    alinhar itens : iniciar;
+
+    imagem de fundo :  gradiente linear ( rgba ( 0 ,  0 ,  0 ,  .5 ) ,  rgba ( 0 ,  0 ,  0 ,  .5 ) 100 % ) ,  url ( '../img/banner-bg.jpg' ) ;
+    tamanho do fundo : capa;
+    altura :  500 px ;
+}
+
+principal . banner de filme . container {
+    largura :  70 % ;
+    margem esquerda :  24 px ;
+}
+
+principal . banner de filme . título {
+    família da fonte :  'Trebuchet MS' ,  'Lucida Sans Unicode' ,  'Lucida Grande' ,  'Lucida Sans' , Arial , sans-serif;
+    tamanho da fonte :  36 px ;
+}
+
+principal . banner de filme . descrição {
+    margem :  24 px  0 ;
+}
+
+principal . botão de banner de filme  {
+    cor de fundo :  rgba ( 0 ,  0 ,  0 ,  .5 ) ;;
+    col ou :  # ffffff ;
+    preenchimento : 16px 32px;
+    fronteira :  nenhum ;
+    raio da borda : 2px;
+    tamanho da fonte : 12px;
+    transformação de texto :  maiúsculas ;
+    cursor :  ponteiro ;
+    transição : .3s facilitam  tudo ;
+}
+
+principal . botão do banner do filme  : hover {
+    cor de fundo :  rgba ( 255 ,  255 ,  255 ,  0,9 );
+    cor : preto;
+}
+
+. carrossel de filmes {
+    margem :  24 px  0 ;
+}
+
+. carrossel de filmes . caixa de filme {
+    cursor : ponteiro;
+}
+
+/*consultas de mídia*/
+
+@media ( largura máxima :  700 px ) {
+    cabeçalho . container {
+        direção flexível : coluna;
+        margem inferior :  12 px ;
+    }
+
+    principal . botão de banner de filme  {
+        largura :  100 % ;
+        margem inferior :  8 px ;;
+    }
+}
+
+@media ( largura mínima :  1000 px ) {
+    principal . banner de filme . título {
+        tamanho da fonte :  54 px ;
+    }
+
+    principal . banner de filme . descrição {
+        largura :  50 % ;
+    }
+}
